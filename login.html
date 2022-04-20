@@ -19,6 +19,7 @@
             font-family: 'Montserrat', sans-serif;
             font-size: 14px;
             color: #fff;
+            background-image: url(./images/backgroundimage.jpg);
         }
 
         label {
@@ -26,14 +27,16 @@
         }
 
         .box {
-            margin: 25vh auto;
+            margin: 25vh auto 0 auto;
             max-width: 380px;
             border-radius: 5px;
-            background: rgb(43,19,75);
+            background: #fff;
             width: 60%;
             padding-left: 3%;
             padding-right: 3%;
             padding-bottom: 10px;
+            color: rgb(43,19,75);
+            font-weight: bold;
         }
 
         .form-wrap {
@@ -53,12 +56,17 @@
             margin-top: 5px;
         }
 
+        .form-wrap .form-group{
+            padding-top: 15px;
+        }
+
         .form-wrap .form-group input {
             width: 100%;
             padding: 5px;
             outline: none;
-            border: #fff 1px solid;
+            border: #D3D3D3 1px solid;
             border-radius: 5px;
+            margin-top: 10px;
         }
 
         .form-wrap button {
@@ -91,8 +99,9 @@
         margin-bottom: 1rem;
         width: 100%;
         display: flex;
-        background-color: #fff;
+        background-color: rgb(43,19,75);
         border-radius: 5px;
+        color: #fff;
         }
 
         .google-icon {
@@ -102,16 +111,15 @@
 
         .btn-text {
             margin: 2%;
-            margin-left: 20%;
-            color: rgb(43,19,75);
+            padding-left: 20%;
             font-size: 13px;
+            color: #fff;
         }
+
 
 
 @import url(https://fonts.googleapis.com/css?family=Roboto:500);
-        .form-wrap a {
-            color: rgb(251,123,35);
-        }
+    
         .navbar {
             display: flex;
             align-items: center;
@@ -191,18 +199,18 @@
                 <div class="google-icon-wrapper">
                     <img class="google-icon" src="https://upload.wikimedia.org/wikipedia/commons/5/53/Google_%22G%22_Logo.svg"/>
                 </div>
-                <a class="btn-text" href="#"><b>Sign in with google</b></a>
+                <a class="btn-text" href="#">Sign in with google</a>
             </div>
           
             <div class="separator"><b>OR</b></div>
         
             <form>
                 <div class="form-group">
-                    <label for="Email">Email</label><br>
+                    <label for="Email">Email</label>
                     <input type="email">
                 </div>
                 <div class="form-group">
-                    <label for="Senha">Password</label><br>
+                    <label for="Senha">Password</label>
                     <input type="password">
                 </div>
                 <button type="submit">Login</button>
